@@ -1,4 +1,4 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.10;
 
 contract carhistory {
 
@@ -29,12 +29,8 @@ function setCarHistoryLog (bytes32 carRegNo, uint mileage, bytes32 part1, bytes3
 }
 
 function getCarHistoryLog(bytes32 carRegNo) public constant returns (uint, bytes32, bytes32, bytes32, address) {
-  var mileage = carHistoryStructs[carRegNo].mileage;
-  var part1 = carHistoryStructs[carRegNo].part1;
-  var part2 = carHistoryStructs[carRegNo].part2;
-  var part3 = carHistoryStructs[carRegNo].part3;
-  var sender = carHistoryStructs[carRegNo].sender;
-  return (mileage, part1, part2, part3, sender);
+  return (carHistoryStructs[carRegNo].mileage, carHistoryStructs[carRegNo].part1, 
+    carHistoryStructs[carRegNo].part2, carHistoryStructs[carRegNo].part3, carHistoryStructs[carRegNo].sender);
 }
 
 }
