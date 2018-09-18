@@ -15,6 +15,7 @@ How to SetUp
 4. truffle develop
 
   Copy the account address and update truffle.js and index.html to provide right account to access the smart contract
+  
 5. On the truffle command prompt
   a. compile
   b. migrate
