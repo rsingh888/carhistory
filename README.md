@@ -13,6 +13,7 @@ How to SetUp
 2. install truffle npm install truffle -g
 3. run npm install
 4. truffle develop
+
   Copy the account address and update truffle.js and index.html to provide right account to access the smart contract
 5. On the truffle command prompt
   a. compile
